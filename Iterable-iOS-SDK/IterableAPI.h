@@ -317,6 +317,10 @@ typedef NS_ENUM(NSInteger, PushServicePlatform) {
  */
 - (void)track:(NSString *)eventName dataFields:(nullable NSDictionary *)dataFields onSuccess:(OnSuccessHandler)onSuccess onFailure:(OnFailureHandler)onFailure;
 
+#warning JZ Locally modified
+- (NSURLRequest *)createRequestForAction:(NSString *)action withArgs:(NSDictionary *)args;
+- (void)sendRequest:(NSURLRequest *)request onSuccess:(void (^)(NSDictionary *))onSuccess onFailure:(void (^)(NSString *, NSData *))onFailure;
+
 @end
 
 NS_ASSUME_NONNULL_END
