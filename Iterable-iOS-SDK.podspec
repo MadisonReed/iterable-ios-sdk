@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "IterableSDK"
+  s.name         = "Iterable-iOS-SDK"
   s.version      = "3.0.1"
   s.summary      = "Iterable's official SDK for iOS"
 
